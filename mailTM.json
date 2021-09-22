@@ -1,0 +1,321 @@
+{
+   "name": "mailTM",
+   "author": "z1p",
+   "version": 0.1,
+   "categories": [],
+   "description": "",
+   "icon": null,
+   "requirements": {
+      "jimi_min_version": null,
+      "jimi_max_version": null,
+      "plugins": []
+   },
+   "collections": {},
+   "triggers": {},
+   "actions": {
+      "mailTMConnect": {
+         "display_name": "mailTMConnect",
+         "className": "_mailTMConnect",
+         "class_location": "models.action",
+         "description": "",
+         "fields": [
+            {
+               "schema_item": "username",
+               "schema_value": "username",
+               "type": "input",
+               "label": "username",
+               "description": ""
+            },
+            {
+               "schema_item": "password",
+               "schema_value": "password",
+               "type": "input",
+               "label": "password",
+               "description": ""
+            }
+         ],
+         "data_out": {
+            "result": {
+               "description": "Returns True when successful.",
+               "type": "boolean",
+               "always_present": true,
+               "values": {
+                  "True": {
+                     "description": "Successful."
+                  },
+                  "False": {
+                     "description": "Failure."
+                  }
+               }
+            },
+            "rc": {
+               "description": "Returns the exit code for the action.",
+               "type": "number",
+               "always_present": true,
+               "values": {
+                  "0": {
+                     "description": "Successful."
+                  }
+               }
+            }
+         }
+      },
+      "mailTMGetAccount": {
+         "display_name": "mailTMGetAccount",
+         "className": "_mailTMGetAccount",
+         "class_location": "models.action",
+         "description": "",
+         "fields": [],
+         "data_out": {
+            "result": {
+               "description": "Returns True when successful.",
+               "type": "boolean",
+               "always_present": true,
+               "values": {
+                  "True": {
+                     "description": "Successful."
+                  },
+                  "False": {
+                     "description": "Failure."
+                  }
+               }
+            },
+            "rc": {
+               "description": "Returns the exit code for the action.",
+               "type": "number",
+               "always_present": true,
+               "values": {
+                  "0": {
+                     "description": "Successful."
+                  }
+               }
+            }
+         }
+      },
+      "mailTMDeleteAccount": {
+         "display_name": "mailTMDeleteAccount",
+         "className": "_mailTMDeleteAccount",
+         "class_location": "models.action",
+         "description": "",
+         "fields": [],
+         "data_out": {
+            "result": {
+               "description": "Returns True when successful.",
+               "type": "boolean",
+               "always_present": true,
+               "values": {
+                  "True": {
+                     "description": "Successful."
+                  },
+                  "False": {
+                     "description": "Failure."
+                  }
+               }
+            },
+            "rc": {
+               "description": "Returns the exit code for the action.",
+               "type": "number",
+               "always_present": true,
+               "values": {
+                  "0": {
+                     "description": "Successful."
+                  }
+               }
+            }
+         }
+      },
+      "mailTMGetMessages": {
+         "display_name": "mailTMGetMessages",
+         "className": "_mailTMGetMessages",
+         "class_location": "models.action",
+         "description": "",
+         "fields": [],
+         "data_out": {
+            "result": {
+               "description": "Returns True when successful.",
+               "type": "boolean",
+               "always_present": true,
+               "values": {
+                  "True": {
+                     "description": "Successful."
+                  },
+                  "False": {
+                     "description": "Failure."
+                  }
+               }
+            },
+            "rc": {
+               "description": "Returns the exit code for the action.",
+               "type": "number",
+               "always_present": true,
+               "values": {
+                  "0": {
+                     "description": "Successful."
+                  }
+               }
+            }
+         }
+      },
+      "mailTMGetMessage": {
+         "display_name": "mailTMGetMessage",
+         "className": "_mailTMGetMessage",
+         "class_location": "models.action",
+         "description": "",
+         "fields": [
+            {
+               "schema_item": "message_id",
+               "schema_value": "message_id",
+               "type": "input",
+               "label": "message_id",
+               "description": ""
+            }
+         ],
+         "data_out": {
+            "result": {
+               "description": "Returns True when successful.",
+               "type": "boolean",
+               "always_present": true,
+               "values": {
+                  "True": {
+                     "description": "Successful."
+                  },
+                  "False": {
+                     "description": "Failure."
+                  }
+               }
+            },
+            "rc": {
+               "description": "Returns the exit code for the action.",
+               "type": "number",
+               "always_present": true,
+               "values": {
+                  "0": {
+                     "description": "Successful."
+                  }
+               }
+            }
+         }
+      },
+      "mailTMDeleteMessage": {
+         "display_name": "mailTMDeleteMessage",
+         "className": "_mailTMDeleteMessage",
+         "class_location": "models.action",
+         "description": "",
+         "fields": [
+            {
+               "schema_item": "message_id",
+               "schema_value": "message_id",
+               "type": "input",
+               "label": "message_id",
+               "description": ""
+            }
+         ],
+         "data_out": {
+            "result": {
+               "description": "Returns True when successful.",
+               "type": "boolean",
+               "always_present": true,
+               "values": {
+                  "True": {
+                     "description": "Successful."
+                  },
+                  "False": {
+                     "description": "Failure."
+                  }
+               }
+            },
+            "rc": {
+               "description": "Returns the exit code for the action.",
+               "type": "number",
+               "always_present": true,
+               "values": {
+                  "0": {
+                     "description": "Successful."
+                  }
+               }
+            }
+         }
+      },
+      "mailTMReadMessage": {
+         "display_name": "mailTMReadMessage",
+         "className": "_mailTMReadMessage",
+         "class_location": "models.action",
+         "description": "",
+         "fields": [
+            {
+               "schema_item": "message_id",
+               "schema_value": "message_id",
+               "type": "input",
+               "label": "message_id",
+               "description": ""
+            }
+         ],
+         "data_out": {
+            "result": {
+               "description": "Returns True when successful.",
+               "type": "boolean",
+               "always_present": true,
+               "values": {
+                  "True": {
+                     "description": "Successful."
+                  },
+                  "False": {
+                     "description": "Failure."
+                  }
+               }
+            },
+            "rc": {
+               "description": "Returns the exit code for the action.",
+               "type": "number",
+               "always_present": true,
+               "values": {
+                  "0": {
+                     "description": "Successful."
+                  }
+               }
+            }
+         }
+      },
+      "mailTMWaitForMessages": {
+         "display_name": "mailTMWaitForMessages",
+         "className": "_mailTMWaitForMessages",
+         "class_location": "models.action",
+         "description": "",
+         "fields": [
+            {
+               "schema_item": "timeout",
+               "schema_value": "timeout",
+               "type": "input",
+               "label": "timeout",
+               "description": ""
+            }
+         ],
+         "data_out": {
+            "result": {
+               "description": "Returns True when successful.",
+               "type": "boolean",
+               "always_present": true,
+               "values": {
+                  "True": {
+                     "description": "Successful."
+                  },
+                  "False": {
+                     "description": "Failure."
+                  }
+               }
+            },
+            "rc": {
+               "description": "Returns the exit code for the action.",
+               "type": "number",
+               "always_present": true,
+               "values": {
+                  "0": {
+                     "description": "Successful."
+                  }
+               }
+            }
+         }
+      }
+   },
+   "settings": {}
+}
